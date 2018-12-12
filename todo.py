@@ -6,7 +6,6 @@ dt = datetime.datetime.now()
 print("It is " + dt.strftime("%c") + "\n")
 print("Welcome to Terminal To Do! Type 'help' to see usage instructions.\n")
 
-print("TODO:")
 view_todo()
 
 user_input = input("What would you like to do? ")
@@ -29,12 +28,24 @@ while user_input != "quit":
 
         Usage:
 
-        do [task] -- add a task
-        done [number] -- complete a task
-        delete [number] -- delete a task
-        todo -- view your todo list
+            do [task] -- add a task
 
-        Example: do Study for Finals
+            done [number] -- complete a task
+
+            delete [number] -- delete a task
+
+            todo -- view the todo list
+
+            todone -- view the done list
+
+            clear -- clear todo list
+
+            clear all -- clear todo and done lists
+
+            quit -- exit the program
+
+        Enjoy and stay productive!
+
         ''')
 
     elif action == "do":
